@@ -16,5 +16,9 @@
 # Ignore Byebug command history file.
 .byebug_history
 
-
+#rubymine
 .idea
+
+#hide secrets.yml
+/config/secrets.yml
+
