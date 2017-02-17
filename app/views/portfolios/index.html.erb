@@ -1,9 +1,9 @@
 <h2>Portfolio Items</h2>
 
 <% @portfolio_items.each do |item| %>
-  <h3><%= item.title %></h3>
+  <h3><%= link_to item.title , item %></h3>
     <p><em><%= item.subtitle %></em></p>
-    <%= image_tag item.thumbnail %>
+    <%= image_tag item.thumbnail unless item.thumbnail.nil?  %>
   <p>
     <%= item.body %>
   </p>
