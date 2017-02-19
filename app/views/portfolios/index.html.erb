@@ -4,8 +4,6 @@
   <h3><%= link_to item.title , item %></h3>
     <p><em><%= item.subtitle %></em></p>
     <%= image_tag item.thumbnail unless item.thumbnail.nil?  %>
-  <p>
-    <%= item.body %>
-  </p>
+  <div><%= item.body %></div>
 <hr>
 <% end %>
