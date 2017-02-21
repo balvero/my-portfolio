@@ -38,7 +38,8 @@ class PortfoliosController < ApplicationController
   end
 
   def destroy
-
+    @portfolio.destroy
+    redirect_to portfolios_url, notice: 'Blog was successfully destroyed.'
   end
 
   private
