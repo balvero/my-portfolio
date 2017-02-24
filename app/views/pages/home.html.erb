@@ -1,4 +1,11 @@
 <h1>Homepage</h1>
-<%= @posts.inspect %>
+<% @posts.each do |post| %>
+    <h2><%= post.title %></h2>
+    <p><%= post.body %></p>
+    <hr>
+<% end %>
 
-<%= @skills.inspect %>
+<% @skills.each do |skill| %>
+    <div><%= skill.title %> - <%= skill.percent_utilized %></div>
+
+<% end %>
