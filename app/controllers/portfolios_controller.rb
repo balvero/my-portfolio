@@ -11,7 +11,7 @@ class PortfoliosController < ApplicationController
   end
 
   def create
-    @portfolio = Portfolio.new(params.require(:portfolio).permit(:title, :subtitle, :body, :main_image, :thumbnail, technologies_attributes: [:name]))
+    @portfolio = Portfolio.new(portfolio_params)
 
     respond_to do |format|
       if @portfolio.save
@@ -40,7 +40,7 @@ class PortfoliosController < ApplicationController
 
   def destroy
     @portfolio.destroy
-    redirect_to portfolios_url, notice: 'Blog was successfully destroyed.'
+    redirect_to portfolios_url, notice: 'Portfolio was successfully deleted.'
   end
 
   private
@@ -50,7 +50,12 @@ class PortfoliosController < ApplicationController
   end
 
   def portfolio_params
-    params.require(:portfolio).permit(:title, :subtitle, :body, :main_image, :thumbnail)
+    params.require(:portfolio).permit(:title,
+                                      :subtitle,
+                                      :body,
+                                      :main_image,
+                                      :thumbnail,
+                                      technologies_attributes: [:name])
   end
 
 end
