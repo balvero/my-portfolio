@@ -25,15 +25,7 @@
 
 <%= yield %>
 
-<div>
-  <ul>
-    <li><%= link_to 'Home', root_path %></li>
-    <li><%= link_to 'Portfolios', portfolios_path %></li>
-    <li><%= link_to 'About Me', about_path %></li>
-    <li><%= link_to 'Blog', blogs_path %></li>
-    <li><%= link_to 'Contact', contact_path %></li>
-  </ul>
-</div>
+<%= render 'shared/nav' %>
 
 <% if session[:source] %>
     Thanks for visiting me from <%= session[:source] %>.
