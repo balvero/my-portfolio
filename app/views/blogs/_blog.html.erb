@@ -1,0 +1,11 @@
+<div>
+  <h2><%= blog.title %></h2>
+  <div class="summary"><%= blog.body %></div>
+  <%= link_to blog.status, toggle_status_blog_path(blog) %>
+  <div class="mini-nav">
+    <%= link_to 'Show', blog %>
+    <%= link_to 'Edit', edit_blog_path(blog) %></td>
+    <%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %>
+  </div>
+</div>
+<hr>
