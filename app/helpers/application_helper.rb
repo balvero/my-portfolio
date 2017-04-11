@@ -16,4 +16,8 @@ module ApplicationHelper
     end
   end
 
+  def copyright_generator
+    NoobitaViewTool::Renderer.copyright 'Noobita', 'All rights reserved'
+  end
+
 end

@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/n000bita/noobita_view_tool
+  revision: 028fc3083d6cb6014fb4435cbe31b18f365d5888
+  specs:
+    noobita_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -190,6 +196,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
+  noobita_view_tool!
   pg (~> 0.18)
   pry-byebug
   puma (~> 3.0)
