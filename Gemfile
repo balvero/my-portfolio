@@ -59,3 +59,5 @@ gem 'devise', '~> 4.2'
 gem 'bootstrap', '~> 4.0.0.alpha6'
 
 gem 'noobita_view_tool', '~> 0.1.0'
+
+gem 'petergate', '~> 1.6', '>= 1.6.3'
