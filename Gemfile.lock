@@ -1,9 +1,3 @@
-GIT
-  remote: https://github.com/n000bita/noobita_view_tool
-  revision: 028fc3083d6cb6014fb4435cbe31b18f365d5888
-  specs:
-    noobita_view_tool (0.1.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -101,6 +95,7 @@ GEM
     nio4r (1.2.1)
     nokogiri (1.7.0.1)
       mini_portile2 (~> 2.1.0)
+    noobita_view_tool (0.1.0)
     orm_adapter (0.5.0)
     pg (0.19.0)
     pry (0.10.4)
@@ -196,7 +191,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
-  noobita_view_tool!
+  noobita_view_tool (~> 0.1.0)
   pg (~> 0.18)
   pry-byebug
   puma (~> 3.0)
