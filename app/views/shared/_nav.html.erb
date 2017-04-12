@@ -1,9 +1,26 @@
-<div class="<%= location %>">
-  <ul>
-    <li><%= link_to 'Home', root_path %></li>
-    <li><%= link_to 'Portfolios', portfolios_path %></li>
-    <li><%= link_to 'About Me', about_path %></li>
-    <li><%= link_to 'Blog', blogs_path %></li>
-    <li><%= link_to 'Contact', contact_path %></li>
-  </ul>
-</div>
+<header class="bd">
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <%= link_to 'Noobita', root_path, class: 'navbar-brand' %>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <%= link_to 'Portfolio', portfolios_path, class: 'nav-link' %></a>
+          </li>
+          <li class="nav-item">
+            <%= link_to 'About', about_path,  class: 'nav-link' %></a>
+          </li>
+          <li class="nav-item">
+            <%= link_to 'Blog', blogs_path, class: 'nav-link' %></a>
+          </li>
+          <li class="nav-item">
+            <%= link_to 'Contact', contact_path, class: 'nav-link' %></a>
+          </li>
+          <%= login_helper %>
+        </ul>
+      </div>
+    </nav>
+</header>
+
