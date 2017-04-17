@@ -16,7 +16,7 @@
 
   <body>
   <%= render 'shared/nav', location: 'top' %>
-  <div class="container-fluid bd">
+  <div id="main">
     <%= render partial: "shared/flash_messages", flash: flash %>
     <%= yield %>
   </div>

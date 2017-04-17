@@ -1,6 +1,15 @@
-<h1>Hi, <%= current_user.first_name %></h1>
+<div class="jumbotron">
+  <div class="container-fluid bd">
+    <h1 class="display-3">Web Developer</h1>
+    <p>Responsive Web Design, Landing Page, Rails, Python, WordPress</p>
+    <p><%= link_to 'About Me', about_path , class: 'btn btn-primary btn-lg' %></p>
+  </div>
+</div>
+<div class="container-fluid bd">
+  <h1>Hi, <%= current_user.first_name %></h1>
 
-<% @skills.each do |skill| %>
-    <div><%= skill.title %> - <%= skill.percent_utilized %></div>
+  <% @skills.each do |skill| %>
+      <div><%= skill.title %> - <%= skill.percent_utilized %></div>
 
-<% end %>
+  <% end %>
+</div>
