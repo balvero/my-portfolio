@@ -12,15 +12,14 @@
 </head>
 
 <body>
-<%= render 'shared/nav', location: 'bottom'%>
-<%= login_helper %>
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
-<%= yield %>
+<%= render 'shared/nav', location: 'top'%>
+<div class="container-fluid bd">
+  <%= render partial: "shared/flash_messages", flash: flash %>
+  <%= yield %>
+</div>
 
-
-
-<%= source_helper("blog") %>
+<%= render 'shared/footer' %>
+<%= source_helper("application") %>
 
 </body>
 </html>

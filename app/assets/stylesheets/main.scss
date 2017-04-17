@@ -13,7 +13,8 @@ body, p, div {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $header-font;
+  font-family: $default-font;
+  font-weight: 600;
 }
 
 .bg-faded {
@@ -22,4 +23,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .bd {
   margin: 0 7.14%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: bold;
 }

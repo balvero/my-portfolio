@@ -1,9 +1,4 @@
 <h1>Hi, <%= current_user.first_name %></h1>
-<% @posts.each do |post| %>
-    <h2><%= post.title %></h2>
-    <p><%= post.body %></p>
-    <hr>
-<% end %>
 
 <% @skills.each do |skill| %>
     <div><%= skill.title %> - <%= skill.percent_utilized %></div>
