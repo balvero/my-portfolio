@@ -20,18 +20,18 @@ module ApplicationHelper
     NoobitaViewTool::Renderer.copyright 'Noobita', 'All rights reserved'
   end
 
-  def bootstrap_class_for flash_type
+  def bootstrap_class_for(flash_type)
     case flash_type
-      when :success
+      when 'success'
         "alert-success"
-      when :error
+      when 'error'
         "alert-error"
-      when :alert
-        "alert-block"
-      when :notice
+      when 'alert'
+        "alert-warning"
+      when 'notice'
         "alert-info"
       else
-        flash_type.to_s
+        flash_type
     end
   end
 
