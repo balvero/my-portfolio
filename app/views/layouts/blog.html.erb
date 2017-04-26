@@ -14,8 +14,10 @@
 <body>
 <%= render 'shared/nav', location: 'top'%>
 <div class="container-fluid bd">
-  <%= render partial: "shared/flash_messages", flash: flash %>
-  <%= yield %>
+   <div class="col-8 offset-md-2">
+    <%= yield %>
+  </div>
+
 </div>
 
 <%= render 'shared/footer' %>

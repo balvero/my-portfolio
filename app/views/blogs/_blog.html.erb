@@ -2,10 +2,12 @@
   <h2><%= link_to  blog.title, blog %></h2>
   <div class="meta">Published <%= distance_of_time_in_words(blog.created_at, Time.now) %></div>
   <div class="summary"><%= blog.body %></div>
-  <%= link_to blog.status, toggle_status_blog_path(blog) if logged_in?(:site_admin) %>
-  <div class="mini-nav">
-    <%= link_to 'Edit', edit_blog_path(blog) if logged_in?(:site_admin) %>
-    <%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } if logged_in?(:site_admin)  %>
-  </div>
+  <% if logged_in?(:site_admin) %>
+    <div class="mini-nav">
+      <%= link_to blog.status, toggle_status_blog_path(blog) %>
+      <%= link_to 'Edit', edit_blog_path(blog)  %>
+      <%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %>
+    </div>
+  <% end %>
 </div>
 <hr>
