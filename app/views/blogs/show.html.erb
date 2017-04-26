@@ -1,12 +1,10 @@
-<p>
-  <strong>Title:</strong>
-  <%= @blog.title %>
-</p>
+<div class="page-header">
+  <h1><%= @blog.title %></h1>
+</div>
 
-<p>
-  <strong>Body:</strong>
+<div class="entry">
   <%= @blog.body %>
-</p>
-
-<%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin) %>
-<%= link_to 'Back', blogs_path %>
+</div>
+<hr>
+<%= link_to 'Edit', edit_blog_path(@blog), class: 'btn btn-primary' if logged_in?(:site_admin) %>
+<%= link_to 'Back', blogs_path, class: 'btn btn-info' %>
