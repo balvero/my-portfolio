@@ -4,3 +4,20 @@
 
 @import "bootstrap";
 @import "main";
+
+.portfolio-item {
+  float: left;
+  text-align: center;
+  margin: 15px 0;
+  padding: 30px;
+}
+
+.portfolio-item img {
+  margin-bottom: 30px;
+  border-radius: 50%;
+  max-width: 100%;
+}
+
+.portfolio-item h3 {
+  font-size: 1.1em;
+}

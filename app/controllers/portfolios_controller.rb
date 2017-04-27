@@ -32,7 +32,7 @@ class PortfoliosController < ApplicationController
 
   def update
     if @portfolio.update(portfolio_params)
-      redirect_to @portfolio, notice: 'Portfolio was successfully updated.'
+      redirect_to portfolio_show_path(@portfolio), notice: 'Portfolio was successfully updated.'
     else
       render :edit
     end
