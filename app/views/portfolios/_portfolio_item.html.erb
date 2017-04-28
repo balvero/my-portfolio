@@ -1,8 +1,7 @@
 <div class="col-md-4 portfolio-item">
-  <%= image_tag portfolio_item.thumbnail unless portfolio_item.thumbnail.nil?  %>
+  <%= link_to image_tag(portfolio_item.thumbnail) , portfolio_show_path(portfolio_item) unless portfolio_item.thumbnail.nil? %>
   <h3><%= link_to portfolio_item.title , portfolio_show_path(portfolio_item) %></h3>
-  <p><em><%= portfolio_item.subtitle %></em></p>
-  <div><%= portfolio_item.body %></div>
-  <%= link_to 'Edit', edit_portfolio_path(portfolio_item) if logged_in?(:site_admin) %>
-  <%= link_to 'Delete', portfolio_item, method: :delete, data: { confirm: 'Are you sure?' }  if logged_in?(:site_admin)%>
+  <div class="portfolio-subtitle"><%= portfolio_item.subtitle %></div>
+  <%= link_to 'Edit', edit_portfolio_path(portfolio_item), class: 'btn-info btn-sm' if logged_in?(:site_admin) %>
+  <%= link_to 'Delete', portfolio_item, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn-danger btn-sm'  if logged_in?(:site_admin)%>
 </div>

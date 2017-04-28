@@ -44,6 +44,28 @@ header#header {
   background-color: #f6f6f6;
 }
 
-.auth-btn:hover {
+a:hover {
   text-decoration: none;
+}
+
+.mini-nav {
+  padding: 15px 0;
+}
+#footer {
+  margin-top: 45px;
+  padding: 15px 0;
+  border-top: 1px solid #e6e6e6;
+}
+
+#foot-nav {
+  padding: 0;
+}
+
+#foot-nav li {
+  display: inline-block;
+}
+
+#foot-nav li a {
+  color: #292b2c;
+  font-weight: 700;
 }

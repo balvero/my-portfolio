@@ -1,14 +1,27 @@
-<h1><%= @portfolio.title %></h1>
-<p><%= @portfolio.subtitle %></p>
-<%= image_tag @portfolio.main_image unless @portfolio.main_image.nil?  %>
-<div>
-  <%= @portfolio.body %>
-</div>
-<h3>Technologies Used</h3>
-<ul>
-<% @portfolio.technologies.each do |t| %>
-  <li><%= t.name %></li>
-<% end %>
-</ul>
+<header class="portfolio-header-image" style="background-image: url(<%= @portfolio.main_image unless @portfolio.main_image.nil? %>);">
 
-<%= link_to 'Back', portfolios_path %>
+</header>
+<div class="container-fluid bd portfolio">
+  <div class="col-md-8 offset-md-2">
+    <div class="page-header">
+      <h1 class="title text-center"><%= @portfolio.title %></h1>
+    </div>
+    <p class="text-center"><%= @portfolio.subtitle %></p>
+    <div class="body text-center section">
+      <%= @portfolio.body %>
+    </div>
+    <div class="technologies text-center section">
+      <h3>Technologies Used</h3>
+      <ul>
+        <% @portfolio.technologies.each do |t| %>
+            <li><%= t.name %></li>
+        <% end %>
+      </ul>
+    </div>
+
+    <div class="mini-nav text-center">
+      <%= link_to 'Back', portfolios_path, class: 'btn btn-secondary' %>
+    </div>
+
+  </div>
+</div>
