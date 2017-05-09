@@ -67,3 +67,5 @@ gem 'kaminari'
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
 end
+
+gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
