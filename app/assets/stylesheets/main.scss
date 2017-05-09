@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Ovo');
 @import url('https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Ovo');
 
 //Colors
 $white: #fff;
 $header-font: 'Ovo', serif;
 $default-font: 'Muli', sans-serif;
+
+#branding {
+  font-family: 'Ovo', serif;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+}
 
 body, p, div {
   font-family: $default-font;
@@ -26,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.5);
   font-weight: bold;
 }
 

@@ -63,3 +63,7 @@ gem 'noobita_view_tool', '~> 0.1.0'
 gem 'petergate', '~> 1.6', '>= 1.6.3'
 
 gem 'kaminari'
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.3.3'
+end
