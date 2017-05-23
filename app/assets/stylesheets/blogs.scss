@@ -1,5 +1,21 @@
-// Place all the styles related to the Blogs controller here.
-// They will automatically be included in application.scss.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
 @import "bootstrap";
+@import "main";
+
+.meta {
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+
+.pagination a {
+  color: #888 !important;
+  background: #f6f6f6;
+  border-color: #e6e6e6 !important;
+  border-radius: 3px;
+}
+
+.pagination span.disabled {
+  color: #666666;
+  border-color: #e6e6e6;
+  border-radius: 3px;
+}

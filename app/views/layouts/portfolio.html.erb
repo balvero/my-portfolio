@@ -12,13 +12,12 @@
 </head>
 
 <body>
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
-
 <%= render 'shared/nav', location: 'top'%>
-<%= login_helper %>
-<%= yield %>
 
+  <%= yield %>
+
+
+<%= render 'shared/footer' %>
 <%= source_helper("application") %>
 
 </body>

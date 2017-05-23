@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Ovo');
 @import url('https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Ovo');
 
 //Colors
 $white: #fff;
 $header-font: 'Ovo', serif;
 $default-font: 'Muli', sans-serif;
+
+#branding {
+  font-family: 'Ovo', serif;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+}
 
 body, p, div {
   font-family: $default-font;
@@ -13,7 +21,8 @@ body, p, div {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $header-font;
+  font-family: $default-font;
+  font-weight: 600;
 }
 
 .bg-faded {
@@ -22,4 +31,46 @@ h1, h2, h3, h4, h5, h6 {
 
 .bd {
   margin: 0 7.14%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+}
+
+
+.auth-btn {
+  padding: 5px 15px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #e6e6e6;
+  color: #525252;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.mini-nav {
+  padding: 15px 0;
+}
+#footer {
+  margin-top: 45px;
+  padding: 15px 0;
+  border-top: 1px solid #e6e6e6;
+}
+
+#foot-nav {
+  padding: 0;
+}
+
+#foot-nav li {
+  display: inline-block;
+}
+
+#foot-nav li a {
+  color: #292b2c;
+  font-weight: 700;
 }

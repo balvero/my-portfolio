@@ -1,6 +1,14 @@
-<h1>Edit Portfolio</h1>
+<div class="container-fluid bd">
+  <div class="col-md-6 offset-md-3">
+    <div class="page-header">
+        <h1 class="text-center">Edit <%= @portfolio.title %></h1>
+    </div>
 
-<%= render 'form', portfolio: @portfolio %>
+    <%= render 'form', portfolio: @portfolio %>
+  <div class="mini-nav">
+    <%= link_to 'Show', portfolio_show_path, class: 'btn btn-secondary btn-block' %>
+    <%= link_to 'Back', portfolios_path, class: 'btn btn-secondary btn-block' %>
+  </div>
 
-<%= link_to 'Show', portfolio_show_path %> |
-<%= link_to 'Back', portfolios_path %>
+  </div>
+</div>

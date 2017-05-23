@@ -1,5 +1,11 @@
-<h1>Add Portfolio Item</h1>
-
-<%= render 'form', portfolio: @portfolio %>
-
-<%= link_to 'Back', portfolios_path %>
+<div class="container-fluid bd">
+  <div class="col-md-6 offset-md-3">
+    <div class="page-header">
+      <h1 class="text-center">Add Portfolio Item</h1>
+    </div>
+    <%= render 'form', portfolio: @portfolio %>
+    <div class="mini-nav">
+      <%= link_to 'Back', portfolios_path, class: 'btn btn-secondary btn-block' %>
+    </div>
+  </div>
+</div>
