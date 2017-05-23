@@ -1,4 +1,4 @@
-<div class="col-md-4 portfolio-item">
+<div class="col-md-4 portfolio-item" data-id="<%= portfolio_item.id %>">
   <%= link_to image_tag(portfolio_item.thumbnail) , portfolio_show_path(portfolio_item) unless portfolio_item.thumbnail.nil? %>
   <h3><%= link_to portfolio_item.title , portfolio_show_path(portfolio_item) %></h3>
   <div class="portfolio-subtitle"><%= portfolio_item.subtitle %></div>
