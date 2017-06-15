@@ -22,3 +22,5 @@
 #hide secrets.yml
 /config/secrets.yml
 
+.env
+
