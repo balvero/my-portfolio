@@ -3,8 +3,10 @@ class Portfolio < ApplicationRecord
   accepts_nested_attributes_for :technologies,
                                 reject_if: lambda { |attrs| attrs['name'].blank? }
 
-  include Placeholder
-  validates_presence_of :title, :body, :main_image, :thumbnail
+  validates_presence_of :title, :body
+
+  mount_uploader :thumbnail, PortfolioUploader
+  mount_uploader :main_image, PortfolioUploader
 
   def self.python
     where(subtitle: 'Python')
@@ -16,10 +18,4 @@ class Portfolio < ApplicationRecord
 
   scope :rails, -> {where(subtitle: 'Ruby on Rails')}
 
-  after_initialize :set_defaults
-
-  def set_defaults
-    self.main_image ||= Placeholder.image_generator(height: '640', width: '480')
-    self.thumbnail ||= Placeholder.image_generator(height: '300', width: '300')
-  end
 end

@@ -14,6 +14,10 @@ $default-font: 'Muli', sans-serif;
   padding: 0;
 }
 
+#branding img {
+  vertical-align: top;
+}
+
 body, p, div {
   font-family: $default-font;
   font-weight: 400;
@@ -23,6 +27,10 @@ body, p, div {
 h1, h2, h3, h4, h5, h6 {
   font-family: $default-font;
   font-weight: 600;
+}
+
+img {
+  max-width: 100%;
 }
 
 .bg-faded {
