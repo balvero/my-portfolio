@@ -1,4 +1,9 @@
 <%= form_for(@portfolio) do |f| %>
+    <% if @portfolio.errors.any? %>
+        <% @portfolio.errors.full_messages.each do | error| %>
+            <%= js add_gritter(error, title: "Noobita") %>
+        <% end %>
+    <% end %>
     <div class="form-group">
       <%= f.label :title %>
       <%= f.text_field :title, class: 'form-control' %>
