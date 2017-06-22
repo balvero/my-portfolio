@@ -20,6 +20,9 @@
     </div>
 
     <div class="mini-nav text-center">
+      <% if logged_in?(:site_admin) %>
+            <%= link_to 'Edit', edit_portfolio_path(@portfolio), class: 'btn btn-success' %>
+      <% end %>
       <%= link_to 'Back', portfolios_path, class: 'btn btn-secondary' %>
     </div>
 
