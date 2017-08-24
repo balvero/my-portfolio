@@ -1,0 +1,13 @@
+<div class="container-fluid bd">
+  <h1 class="center">Rails News</h1>
+  <div class="row">
+    <% @tweets.each do |tweet| %>
+      <div class="col-md-6">
+        <div class="tech-news">
+          <%= tweet %>
+        </div>
+
+      </div>
+    <% end %>
+  </div>
+</div>
