@@ -9,6 +9,12 @@ $white: #fff;
 $header-font: 'Ovo', serif;
 $default-font: 'Muli', sans-serif;
 
+/* Utilities */
+
+.center {
+  text-align: center;
+}
+
 #branding {
   font-family: 'Ovo', serif;
   font-size: 40px;
@@ -89,4 +95,8 @@ a:hover {
   background-color: #f6f6f6;
   margin: 15px 0;
   padding: 15px;
+  box-shadow: -2px -2px 0px rgba(0,0,0,0.1) inset;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 5px;
 }
