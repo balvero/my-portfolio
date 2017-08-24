@@ -78,3 +78,5 @@ gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
 gem 'cocoon'
 
 gem 'gritter', '~> 1.2'
+
+gem 'twitter', '~> 6.1'
