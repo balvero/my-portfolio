@@ -7,7 +7,7 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.0.1'
+gem 'rails', '~> 5.1', '>= 5.1.3'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18'
 # Use Puma as the app server
@@ -56,7 +56,8 @@ gem 'friendly_id', '~> 5.1.0'
 
 gem 'devise', '~> 4.2'
 
-gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'bootstrap', '~> 4.0.0.beta'
+gem 'popper_js', '~> 1.11'
 
 gem 'noobita_view_tool', '~> 0.1.0'
 
