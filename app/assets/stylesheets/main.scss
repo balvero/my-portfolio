@@ -1,13 +1,17 @@
 @import "gritter";
 
-@import url('https://fonts.googleapis.com/css?family=Ovo');
-@import url('https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i');
-@import url('https://fonts.googleapis.com/css?family=Ovo');
+
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,400,400i,500,500i,700,700i');
 
 //Colors
 $white: #fff;
-$header-font: 'Ovo', serif;
-$default-font: 'Muli', sans-serif;
+$grey: #f5f5f5;
+$header-font: 'Rubik', sans-serif;
+//$default-font: 'Muli', sans-serif;
+$default-font: 'Roboto Mono', monospace;
+$grey-font: rgba(0,0,0,.8);
+
 
 /* Utilities */
 
@@ -15,26 +19,17 @@ $default-font: 'Muli', sans-serif;
   text-align: center;
 }
 
-#branding {
-  font-family: 'Ovo', serif;
-  font-size: 40px;
-  margin: 0;
-  padding: 0;
-}
-
-#branding img {
-  vertical-align: top;
-}
-
 body, p, div {
   font-family: $default-font;
   font-weight: 400;
-  font-size: 1em;
+  font-size: 16px;
+  color: $grey-font;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $default-font;
-  font-weight: 600;
+  font-family: $header-font;
+  font-weight: 300;
+  color: #222 !important;
 }
 
 img {
@@ -49,11 +44,41 @@ img {
   padding: 0 7.14%;
 }
 
-.navbar-light .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.5);
-  font-weight: bold;
+a {
+  color: #bbb;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
+
+.entry p {
+  margin-top: 38px;
+}
+
+.gritter-title , #gritter-notice-wrapper p {
+  color: #fff !important;
+}
+
+/* header */
+
+#branding {
+  font-family: $header-font;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+#branding img {
+  vertical-align: top;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+  color: #bbb;
+  font-weight: normal;
+}
 
 .auth-btn {
   padding: 5px 15px;
@@ -65,21 +90,108 @@ img {
   background-color: #f6f6f6;
 }
 
-a:hover {
-  text-decoration: none;
-}
 
 .mini-nav {
   padding: 15px 0;
 }
+
+.jumbotron {
+  background-color: $grey;
+}
+
+/* Portfolio */
+
+
+.portfolio-item .portfolio.title {
+  color: #fff;
+  font-size: 22px;
+  font-family: $header-font;
+  font-weight: 300;
+}
+
+.portfolio-subtitle {
+  font-size: 12px;
+  color: #fff;
+}
+
+.portfolio-item {
+  padding: 0;
+  position: relative;
+  margin: 7px;
+}
+
+
+.portfolio-item img {
+  max-width: 100%;
+}
+
+.portfolio-item:hover .overlay, .portfolio-item:hover .portfolio-summary {
+  opacity: 1;
+}
+
+
+.portfolio-summary {
+  opacity: 0;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: #fff !important;
+  font-weight: 300;
+  transition: opacity .5s;
+}
+
+
+.portfolio-header-image {
+  background-size: cover;
+  background-position: center;
+  min-height: 91vh;
+  margin-bottom: 30px;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.5);
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding: 0;
+  transition: opacity .5s;
+}
+
+.section {
+  padding: 30px 0;
+}
+
+.technologies ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+
+/* Footer */
+
 #footer {
   margin-top: 45px;
   padding: 15px 0;
   border-top: 1px solid #e6e6e6;
+  color: #bbb;
+}
+
+#footer .copy {
+  color: #bbb;
+  font-weight: 300;
 }
 
 #foot-nav {
   padding: 0;
+  text-align: center;
 }
 
 #foot-nav li {
@@ -87,8 +199,7 @@ a:hover {
 }
 
 #foot-nav li a {
-  color: #292b2c;
-  font-weight: 700;
+  color: #bbb;
 }
 
 .tech-news {
