@@ -1,7 +1,6 @@
 <div class="col-md-6 item" data-id="<%= portfolio_item.id %>">
-  <div class="portfolio-item">
+  <div class="portfolio-item" style="background-image: url('<%=portfolio_item.thumbnail%>');">
     <div class="overlay"></div>
-      <%= link_to image_tag(portfolio_img(portfolio_item.thumbnail, 'thumbnail')) , portfolio_show_path(portfolio_item) %>
      <div class="portfolio-summary">
        <%= link_to portfolio_item.title , portfolio_show_path(portfolio_item), class: 'portfolio title' %>
        <div class="portfolio-subtitle"><%= portfolio_item.subtitle %></div>
