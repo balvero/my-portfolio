@@ -7,6 +7,8 @@ class Blog < ApplicationRecord
 
   belongs_to :topic
 
+  has_many :comments, dependent: :destroy
+
   def self.featured_blog
     limit(2)
   end
