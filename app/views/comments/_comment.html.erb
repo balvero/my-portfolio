@@ -2,12 +2,20 @@
   <div class="card">
     <div class="card-block">
       <div class="row">
-        <div class="col-md-2">
+        <div class="col-md-12">
+          <div class="avatar">
+            <%= gravatar_helper comment.user %>
+          </div>
+          <div class="comment meta">
+            Comment posted by <span class=""><%= comment.user.first_name %></span> <%= distance_of_time_in_words(comment.created_at, Time.now) %>
+          </div>
 
         </div>
-        <div class="col-md-10">
+
+        <div class="col-md-12">
           <%= comment.content %>
         </div>
+
       </div>
     </div>
   </div>

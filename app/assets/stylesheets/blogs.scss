@@ -19,3 +19,26 @@
   border-color: #e6e6e6;
   border-radius: 3px;
 }
+
+.comment-card {
+  margin-bottom: 10px;
+}
+
+.comment-card .card {
+  padding: 10px;
+}
+
+.avatar {
+  float: left;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.avatar img {
+  display: inline-block;
+  float: left;
+}
+
+.comment-card .comment.meta {
+  margin: 15px 0 0 15px;
+}
