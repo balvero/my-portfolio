@@ -1,6 +1,10 @@
-<h1>Editing Blog</h1>
+<div class="col-8 m-auto">
+
+  <h2 class="center">Editing <%= @blog.title %></h2>
+
 
 <%= render 'form', blog: @blog %>
 
 <%= link_to 'Back', @blog, class: 'btn btn-info' %>
 
+</div>

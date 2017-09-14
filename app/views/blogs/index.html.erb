@@ -1,16 +1,17 @@
+<div class="container-fluid bd">
 <h1 class="center">Posts</h1>
-<div class="col-12">
+<div class="col-8 m-auto">
   <div class="row">
     <%= link_to 'New Blog', new_blog_path, class: 'btn btn-warning btn-sm' if logged_in?(:site_admin) %>
   </div>
 </div>
 
-
-<div class="row">
+  <div class="col-8 m-auto">
   <%= paginate @blogs %>
 </div>
-
-<%= render @blogs %>
+<div class="col-8 m-auto">
+  <%= render @blogs %>
+</div>
 
 <div class="row">
   <%= paginate @blogs %>
@@ -19,4 +20,5 @@
 
 <div id="paginator" class="col-12">
 
+</div>
 </div>
