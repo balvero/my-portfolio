@@ -1,7 +1,7 @@
 <div class="col-12">
   <div class="row">
   <h2><%= link_to  blog.title, blog %></h2>
-  <div class="meta">Published: <%= blog.created_at.strftime("%A, %b, %d, %Y") %></div>
+  <div class="meta">Published: <%= blog.created_at.strftime("%A, %b, %d, %Y") %> Category: <%= link_to  blog.topic.title, blog.topic, class: 'category' %></div>
   <div class="summary"><%= truncate(blog.body, escape: false, length: 300 ) %></div>
   <% if logged_in?(:site_admin) %>
     <div class="mini-nav">
