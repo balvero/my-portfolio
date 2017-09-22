@@ -8,7 +8,7 @@
       </div>
 
       <div class="entry">
-        <%= @blog.body %>
+        <%= markdown @blog.body %>
       </div>
       <hr>
       <%= link_to 'Edit', edit_blog_path(@blog), class: 'btn btn-primary' if logged_in?(:site_admin) %>

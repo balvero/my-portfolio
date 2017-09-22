@@ -5,11 +5,11 @@
   <div class="summary"><%= truncate(blog.body, escape: false, length: 300 ) %></div>
   <% if logged_in?(:site_admin) %>
     <div class="mini-nav">
-      <%= link_to blog.status, toggle_status_blog_path(blog) %>
-      <%= link_to 'Edit', edit_blog_path(blog)  %>
-      <%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %>
-    </div>
+      <%= link_to blog.status, toggle_status_blog_path(blog), class: 'btn-sm btn-secondary' %>
+      <%= link_to 'Edit', edit_blog_path(blog), class: 'btn-sm btn-info'  %>
+      <%= link_to 'Destroy', blog, :class=> 'btn-sm btn-danger', method: :delete, data: { confirm: 'Are you sure?' } %>
   <% end %>
   </div>
 </div>
-<hr>
+</div>
+<hr />
