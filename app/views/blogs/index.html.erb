@@ -1,18 +1,15 @@
 <div class="container-fluid bd">
 <h1 class="center">Posts</h1>
-
-    <div class="row">
-      <div class="col-lg-9">
-      <%= link_to 'New Blog', new_blog_path, class: 'btn btn-warning btn-sm' if logged_in?(:site_admin) %>
-        <%= paginate @blogs %>
-        <%= render @blogs %>
-        <%= paginate @blogs %>
-    </div>
-      <div class="col-lg-3">
-        <%= render 'sidebar' %>
-      </div>
-    </div>
-
+<div class="row">
+  <div class="col-lg-9">
+    <%= link_to 'New Blog', new_blog_path, class: 'btn btn-warning btn-sm' if logged_in?(:site_admin) %>
+    <%= render @blogs %>
+    <%= paginate @blogs %>
+  </div>
+  <div class="col-lg-3">
+    <%= render 'sidebar' %>
+  </div>
+</div>
 
 
 
